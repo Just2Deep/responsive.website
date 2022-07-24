@@ -69,7 +69,7 @@ section {
 
 .hero_right img {
     border-radius: 1em;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
 }
 #feat {
     border-radius: 1em;
@@ -194,7 +194,9 @@ section {
    
     .right_col {
         margin-top: 1em;
-        margin-right: 2em;
+        margin-right: 1em;
+        margin-bottom: 2em;
+        border-radius: 1em;
     }
 
     .skills {
@@ -236,6 +238,11 @@ section {
             font-size: 1em;
         }
     }
+    .hero-container {
+        display: grid;
+        grid-template-columns: 50% auto;
+    }
+
     header {
         padding : 2em 2em 2em 2em;
     }
@@ -259,6 +266,11 @@ section {
         }
     }
 
+    .right_col {
+        max-width: 600px;
+        padding: 6em 8em 6em 2em;
+    }
+
     .portfolio img {
         float: right;
         max-width: 500px;
@@ -280,6 +292,11 @@ section {
     .hero .content{
         padding: 6em 2em 6em 4em;
     }
+
+    .right_col {
+        max-width: 600px;
+        padding: 2em 2em 8em 2em;
+     }
 
     .featured-desc {
         padding-right: 1em;
