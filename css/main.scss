@@ -59,11 +59,22 @@ header {
     display: grid;
     text-align: center;
     padding: 4em;
+    position: relative;
 }
 
 section {
     padding: 4em 2em;
     text-align: center;
+}
+
+.hero_right img {
+    border-radius: 1em;
+    margin-bottom: 2em;
+    height:60vh;
+    opacity: 80%;
+}
+#feat {
+    border-radius: 1em;
 }
 
 .featured {
@@ -83,9 +94,6 @@ section {
     z-index: -1;
 }
 
-.right_transitions2 {
-    border-radius: 1em;
-}
 
 .subtitle {
     text-transform: uppercase;
@@ -156,12 +164,16 @@ section {
 }
 
 @media only screen and (min-width: 800px){
-    .featured, .portfolio {
+    .featured, .portfolio, .hero {
         text-align: left;
     }
     .featured, .portfolio-container{
         display: grid;
         grid-template-columns: 40% auto;
+    }
+    .hero-container {
+        display: grid;
+        grid-template-columns: 60% auto;
     }
 
     .nav-container{
@@ -180,6 +192,11 @@ section {
     .right {
         margin-left: 2em;
         margin-top: 1em;
+    }
+   
+    .right_col {
+        margin-top: 1em;
+        margin-right: 2em;
     }
 
     .skills {
