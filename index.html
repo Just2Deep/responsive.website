@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="nav-container">
+        <header>
+            <a href="index.html" class="logo">John Doe</a>
+
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Initiatives</a></li>
+                    <li><a href="#">Articles</a></li>
+                    <!--<li><a href="#">Contact</a></li>-->
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <div class="hero">
+        <div class="content">
+            <h1 class="stagger1">Small Experiences, <br>
+                Leading to beautiful Creations.</h1>
+                <div class="meet stagger1">
+                    <span>&#8595</span>
+                    <p>Meet John Doe</p>
+                </div>
+        </div>
+    </div>
+    <section class="featured">
+        <div class="left">
+            <div class="inner transition2">
+                <p class="subtitle">Featured Project</p>
+                <a href="#" class="featured-title">YourWebsite.com</a>
+                <p class="featured-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec egestas pulvinar odio. Suspendisse non vehicula quam, quis ultrices est. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;  
+                </p>
+            </div>
+        </div>
+        <img class = "right transition2" src="images/icon1.jpg" alt="Featured Project">
+    </section>
+
+    <section class="skills">
+        <div class="skills-container">
+            <ul>
+                <li class="transition2">
+                    <div class="icon-container one">
+                        <img src="images/project1.jpg" alt="project one">
+                    </div>
+                    <p class="skill-title">Article 1</p>
+                    <p class="featured-desc skill-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec egestas pulvinar odio. Suspendisse non vehicula quam, quis ultrices est.</p>
+                </li>
+                <li class="transition2">
+                    <div class="icon-container two">
+                        <img src="images/project2.jpg" alt="project one">
+                    </div>
+                    <p class="skill-title">Article 2</p>
+                    <p class="featured-desc skill-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec egestas pulvinar odio. Suspendisse non vehicula quam, quis ultrices est.</p>
+                </li>
+                <li class="transition2">
+                    <div class="icon-container three">
+                        <img src="images/project3.jpg" alt="project one">
+                    </div>
+                    <p class="skill-title">Article 3</p>
+                    <p class="featured-desc skill-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec egestas pulvinar odio. Suspendisse non vehicula quam, quis ultrices est.</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="portfolio">
+        <div class="portfolio-container transitions3">
+            <div class="portfolio-lefft">
+                <div class="inner">
+                    <p class="subtitle">Guitar App</p>
+                    <p class="featured-title">somewebsite.com</p>
+                    <p class="featured-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec egestas pulvinar odio. Suspendisse non vehicula quam, quis ultrices est.</p>
+                </div>
+            </div>
+            <a href="#"><img src="images/fretty.jpg" alt="Frestastic"></a>
+        </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js" integrity="sha512-v8B8T8l8JiiJRGomPd2k+bPS98RWBLGChFMJbK1hmHiDHYq0EjdQl20LyWeIs+MGRLTWBycJGEGAjKkEtd7w5Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+        var tl = gsap.timeline();
+
+        tl.from('.content', {
+            y: '-30%',
+            opacity: 0,
+            duration:2,
+            ease: Power4.easeOut
+        })
+
+        tl.from('.stagger1', {
+            opacity:0,
+            y: -50,
+            stagger: .3,
+            ease: Power4.easeOut,
+            duration: 2
+        }, "-=1.8")
+
+        gsap.from(".transition2",{
+            scrollTrigger: {
+                trigger: '.transition2',
+                start: "top bottom"
+            },
+            y:50,
+            opacity: 0,
+            duration: 1.2,
+            stagger: .3
+            })
+
+        
+        gsap.from(".transition3",{
+            scrollTrigger: {
+                trigger: '.transition3',
+                start: "top center"
+            },
+            y:50,
+            opacity: 0,
+            duration: 1.2,
+            stagger: .6
+            })
+    </script>
+</body>
+</html>
