@@ -161,13 +161,16 @@ footer {
   width: 85%;
   margin: auto;
   display: flex;
-  align-items: flex-start;
   justify-content: space-between;
 }
 
 .col {
   flex-basis: 25%;
   padding: 10px;
+}
+
+.col :nth-child(2), .col:nth-child(3) {
+  flex-basis: 15%;
 }
 
 .col h3 {
@@ -178,14 +181,18 @@ footer {
   margin-top: 10px;
   font-size: 2em;
   color: #E5D5FA;
+  padding-left: 20px;
 }
 
 .col h4 {
   color: #E5D5FA;
+  padding-left: 20px;
 }
 
 .btext {
   color: #E5D5FA;
+  padding-left: 20px;
+  padding-top: 10px;
 }
 
 .col p {
@@ -197,15 +204,15 @@ footer {
   width: -moz-fit-content;
   width: fit-content;
   margin: 20px 0;
-  border-bottom: 2px solid #fff;
   color: #E5D5FA;
+  padding-left: 20px;
 }
 
 .logofooter {
   max-height: 200px;
   max-width: 200px;
   border-radius: 0.5em;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 #footer {
@@ -222,6 +229,44 @@ form {
   padding-bottom: 15px;
   align-items: center;
   margin-bottom: 50px;
+  padding-left: 20px;
+}
+
+hr {
+  width: 90%;
+  border: 0;
+  border-bottom: 1px solid #fff;
+  margin: 20px auto;
+}
+
+.copyright {
+  text-align: center;
+}
+
+.underline {
+  width: 100%;
+  height: 5px;
+  background: #fff;
+  border-radius: 3px;
+  position: relative;
+  top: 5px;
+  left: 0;
+}
+
+form button {
+  border-radius: 0.5em;
+  cursor: pointer;
+}
+
+.social-icons .fa-brands {
+  width: 40px;
+  height: 40px;
+  border-radius: 0.3em;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  background: #fff;
+  margin-right: 15px;
 }
 
 @media only screen and (min-width: 800px) {
