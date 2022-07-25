@@ -20,7 +20,7 @@ img {
 }
 
 .nav-container {
-  background-color: #B34053;
+  background-color: #E04E6B;
 }
 .nav-container a {
   color: white;
@@ -56,6 +56,15 @@ header ul a {
 section {
   padding: 4em 2em;
   text-align: center;
+}
+
+footer {
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  background: linear-gradient(to right, #E0425E, #E01F3A);
+  padding: 100px 0 30px;
+  border-radius: 1em;
 }
 
 .hero_right img {
@@ -148,6 +157,73 @@ section {
   margin-bottom: 2em;
 }
 
+.row {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.col {
+  flex-basis: 25%;
+  padding: 10px;
+}
+
+.col h3 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: relative;
+  margin-top: 10px;
+  font-size: 2em;
+  color: #E5D5FA;
+}
+
+.col h4 {
+  color: #E5D5FA;
+}
+
+.btext {
+  color: #E5D5FA;
+}
+
+.col p {
+  color: #E5D5FA;
+}
+
+.email-id {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 20px 0;
+  border-bottom: 2px solid #fff;
+  color: #E5D5FA;
+}
+
+.logofooter {
+  max-height: 200px;
+  max-width: 200px;
+  border-radius: 0.5em;
+  margin-bottom: 30px;
+}
+
+#footer {
+  list-style: none;
+  margin-bottom: 12px;
+}
+
+#footer a {
+  text-decoration: none;
+  color: #E5D5FA;
+}
+
+form {
+  padding-bottom: 15px;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
 @media only screen and (min-width: 800px) {
   .featured, .portfolio, .hero {
     text-align: left;
@@ -193,6 +269,9 @@ section {
   }
   .portfolio-container img {
     margin-left: 2em;
+  }
+  .logofooter {
+    margin-top: -4em;
   }
   .featured::before {
     content: "";
