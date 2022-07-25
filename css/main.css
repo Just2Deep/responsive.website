@@ -261,7 +261,7 @@ form button {
 .social-icons .fa-brands {
   width: 40px;
   height: 40px;
-  border-radius: 0.3em;
+  border-radius: 50%;
   text-align: center;
   line-height: 40px;
   font-size: 20px;
@@ -269,6 +269,17 @@ form button {
   margin-right: 15px;
 }
 
+@media only screen and (max-width: 700px) {
+  footer {
+    bottom: unset;
+  }
+  .col {
+    flex-basis: 100%;
+  }
+  .col :nth-child(2), .col:nth-child(3) {
+    flex-basis: 100%;
+  }
+}
 @media only screen and (min-width: 800px) {
   .featured, .portfolio, .hero {
     text-align: left;
