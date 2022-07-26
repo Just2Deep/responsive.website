@@ -148,6 +148,16 @@ footer {
   margin-bottom: 2em;
 }
 
+.footer-container {
+  height: 150px;
+  display: grid;
+  place-content: center;
+  margin: 0 auto;
+  padding: 2em;
+  border-radius: 1em;
+  margin-bottom: 1em;
+}
+
 .portfolio {
   background: #F7F7F7;
 }
@@ -269,17 +279,6 @@ form button {
   margin-right: 15px;
 }
 
-@media only screen and (max-width: 700px) {
-  footer {
-    bottom: unset;
-  }
-  .col {
-    flex-basis: 100%;
-  }
-  .col :nth-child(2), .col:nth-child(3) {
-    flex-basis: 100%;
-  }
-}
 @media only screen and (min-width: 800px) {
   .featured, .portfolio, .hero {
     text-align: left;
@@ -316,6 +315,11 @@ form button {
     padding-top: 7em;
   }
   .skills-container ul {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 1em;
+  }
+  .footer-container {
     display: grid;
     grid-template-columns: repeat(3, auto);
     grid-gap: 1em;
