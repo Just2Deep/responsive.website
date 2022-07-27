@@ -180,23 +180,6 @@ footer {
     margin-bottom: 2em;
 }
 
-.row {
-    width: 85%;
-    margin: auto;
-    display: flex;
-
-    justify-content: space-between;
-}
-
-.col {
-    flex-basis: 25%;
-    padding: 10px;
-}
-
-.col :nth-child(2), .col:nth-child(3){
-    flex-basis: 15%;
-}
-
 .col h3 {
     width: fit-content;
     position: relative;
@@ -234,10 +217,7 @@ footer {
     border-radius: 0.5em;
     margin-bottom: 10px;
 }
-#footer {
-    list-style: none;
-    margin-bottom: 12px;
-}
+
 
 #footer a{
     text-decoration: none;
@@ -273,6 +253,8 @@ hr {
 form button{
     border-radius: 0.5em;
     cursor: pointer;
+    font-family: 'Poppins';
+    margin-top: 10px;
 }
 .social-icons .fa-brands {
     width: 40px;
@@ -330,6 +312,12 @@ form button{
         padding-top: 7em;
     }
 
+    .footer-top {
+        margin-top: 1em;
+        margin-bottom: 2em;
+        padding-top: 7em;
+    }
+
     .skills-container ul {
         display: grid;
         grid-template-columns: repeat(3, auto);
@@ -337,9 +325,8 @@ form button{
     }
 
     .footer-container {
-        display: grid;
-        grid-template-columns: repeat(3, auto);
-        grid-gap: 1em;
+        display: flexbox;
+        flex-direction: column;
     }
 
     .portfolio {
@@ -351,7 +338,7 @@ form button{
     }
 
     .logofooter {
-        margin-top: -4em;
+        margin-top: 4em;
     }
 
     .featured::before{
