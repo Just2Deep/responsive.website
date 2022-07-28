@@ -134,7 +134,7 @@ footer {
 
 .skills-container ul li {
     background: #F9F3DB;
-    padding: 2em;
+    padding: 0em;
     border-radius: 1em;
     margin-bottom: 1em;
 
@@ -176,12 +176,21 @@ footer {
         place-content: center;
         margin: 0 auto;
         padding-bottom: -2em;
+        
 
         &.one {
             width: 150px;
             height: 200px;
         }
-      
+
+        &.two {
+            margin-top: -100px;
+        }
+        
+        &.three {
+            
+            margin-top: -100px;
+        }
         &.four {
             height: 150px;
         }

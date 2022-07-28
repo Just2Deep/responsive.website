@@ -125,7 +125,7 @@ footer {
 
 .skills-container ul li {
   background: #F9F3DB;
-  padding: 2em;
+  padding: 0em;
   border-radius: 1em;
   margin-bottom: 1em;
 }
@@ -167,6 +167,12 @@ footer {
 .footer-container ul li .footicon-container.one {
   width: 150px;
   height: 200px;
+}
+.footer-container ul li .footicon-container.two {
+  margin-top: -100px;
+}
+.footer-container ul li .footicon-container.three {
+  margin-top: -100px;
 }
 .footer-container ul li .footicon-container.four {
   height: 150px;
