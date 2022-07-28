@@ -63,7 +63,6 @@ footer {
   position: relative;
   bottom: 0;
   background: linear-gradient(to right, #E0425E, #E01F3A);
-  padding: 100px 0 30px;
   border-radius: 1em;
 }
 
@@ -148,14 +147,19 @@ footer {
   margin-bottom: 2em;
 }
 
-.footer-container {
-  height: 150px;
+.footer-container ul li {
+  padding: 0.5em;
+  border-radius: 1em;
+  margin-bottom: 1em;
+}
+.footer-container ul li .rowfoot {
+  height: 100px;
   display: grid;
   place-content: center;
   margin: 0 auto;
-  padding: 2em;
-  border-radius: 1em;
-  margin-bottom: 1em;
+}
+.footer-container ul li .fot-desc {
+  margin-bottom: 2em;
 }
 
 .portfolio {
@@ -167,51 +171,11 @@ footer {
   margin-bottom: 2em;
 }
 
-.col h3 {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  position: relative;
-  margin-top: 10px;
-  font-size: 2em;
-  color: #E5D5FA;
-  padding-left: 20px;
-}
-
-.col h4 {
-  color: #E5D5FA;
-  padding-left: 20px;
-}
-
-.btext {
-  color: #E5D5FA;
-  padding-left: 20px;
-  padding-top: 10px;
-}
-
-.col p {
-  color: #E5D5FA;
-}
-
-.email-id {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  margin: 20px 0;
-  color: #E5D5FA;
-  padding-left: 20px;
-}
-
 .logofooter {
   max-height: 200px;
   max-width: 200px;
   border-radius: 0.5em;
-  margin-bottom: 10px;
-}
-
-#footer a {
-  text-decoration: none;
-  color: #E5D5FA;
+  margin-left: 20px;
 }
 
 form {
@@ -233,7 +197,7 @@ hr {
 }
 
 .underline {
-  width: 100%;
+  width: 50%;
   height: 5px;
   background: #fff;
   border-radius: 3px;
@@ -295,19 +259,10 @@ form button {
     margin-bottom: -7em;
     padding-top: 7em;
   }
-  .footer-top {
-    margin-top: 1em;
-    margin-bottom: 2em;
-    padding-top: 7em;
-  }
   .skills-container ul {
     display: grid;
     grid-template-columns: repeat(3, auto);
     grid-gap: 1em;
-  }
-  .footer-container {
-    display: flexbox;
-    flex-direction: column;
   }
   .portfolio {
     padding-top: 7em;
