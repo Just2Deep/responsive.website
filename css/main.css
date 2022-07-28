@@ -119,6 +119,10 @@ footer {
   background: #fab1a5;
 }
 
+.footer {
+  background: #E0425E;
+}
+
 .skills-container ul li {
   background: #F9F3DB;
   padding: 2em;
@@ -143,22 +147,34 @@ footer {
 .skills-container ul li .skill-title {
   font-weight: bold;
 }
-.skills-container ul li .featured-desc {
-  margin-bottom: 2em;
+.skills-container ul li .featured-desc2 {
+  margin-bottom: 4em;
 }
 
 .footer-container ul li {
-  padding: 0.5em;
+  background: #fab1a5;
+  padding: 2em;
   border-radius: 1em;
   margin-bottom: 1em;
 }
-.footer-container ul li .rowfoot {
-  height: 100px;
+.footer-container ul li .footicon-container {
+  height: 80px;
   display: grid;
   place-content: center;
   margin: 0 auto;
+  padding-bottom: -2em;
 }
-.footer-container ul li .fot-desc {
+.footer-container ul li .footicon-container.one {
+  width: 150px;
+  height: 200px;
+}
+.footer-container ul li .footicon-container.four {
+  height: 150px;
+}
+.footer-container ul li .foot-title {
+  font-weight: bold;
+}
+.footer-container ul li .featured-desc {
   margin-bottom: 2em;
 }
 
@@ -171,25 +187,8 @@ footer {
   margin-bottom: 2em;
 }
 
-.logofooter {
-  max-height: 200px;
-  max-width: 200px;
-  border-radius: 0.5em;
-  margin-left: 20px;
-}
-
 form {
-  padding-bottom: 15px;
   align-items: center;
-  margin-bottom: 50px;
-  padding-left: 20px;
-}
-
-hr {
-  width: 90%;
-  border: 0;
-  border-bottom: 1px solid #fff;
-  margin: 20px auto;
 }
 
 .copyright {
@@ -199,9 +198,9 @@ hr {
 .underline {
   width: 50%;
   height: 5px;
-  background: #fff;
+  background: #000;
   border-radius: 3px;
-  position: relative;
+  position: center;
   top: 5px;
   left: 0;
 }
@@ -220,7 +219,7 @@ form button {
   text-align: center;
   line-height: 40px;
   font-size: 20px;
-  background: #fff;
+  background: #000;
   margin-right: 15px;
 }
 
@@ -235,6 +234,12 @@ form button {
   .hero-container {
     display: grid;
     grid-template-columns: 60% auto;
+  }
+  .footer-container ul {
+    display: grid;
+    grid-template-columns: 35% 20% 20% 20%;
+    grid-gap: 0.5em;
+    padding-left: 1em;
   }
   .nav-container a {
     font-size: 0.9em;
@@ -259,6 +264,11 @@ form button {
     margin-bottom: -7em;
     padding-top: 7em;
   }
+  .footer {
+    margin-top: 1em;
+    margin-bottom: 2em;
+    padding-top: 7em;
+  }
   .skills-container ul {
     display: grid;
     grid-template-columns: repeat(3, auto);
@@ -269,9 +279,6 @@ form button {
   }
   .portfolio-container img {
     margin-left: 2em;
-  }
-  .logofooter {
-    margin-top: 4em;
   }
   .featured::before {
     content: "";

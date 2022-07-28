@@ -72,7 +72,6 @@ footer {
     position: relative;
     bottom: 0;
     background: linear-gradient(to right, #E0425E ,#E01F3A);
-
     border-radius: 1em;
 }
 
@@ -129,6 +128,9 @@ footer {
 .skills {
     background: #fab1a5;
 }
+.footer {
+    background: #E0425E;
+}
 
 .skills-container ul li {
     background: #F9F3DB;
@@ -151,33 +153,46 @@ footer {
         &.three {
             width: 150px;
         }
+    
     }
 
     .skill-title {
         font-weight: bold;
     }
-    .featured-desc {
-        margin-bottom: 2em;
+    .featured-desc2 {
+        margin-bottom: 4em;
     }
 }
 
-.footer-container ul li{
-    padding: 0.5em;
+.footer-container ul li {
+    background: #fab1a5;
+    padding: 2em;
     border-radius: 1em;
     margin-bottom: 1em;
-    
 
-    .rowfoot {
-        height: 100px;
+    .footicon-container {
+        height: 80px;
         display: grid;
         place-content: center;
         margin: 0 auto;
+        padding-bottom: -2em;
+
+        &.one {
+            width: 150px;
+            height: 200px;
+        }
+      
+        &.four {
+            height: 150px;
+        }
     }
 
-    .fot-desc {
+    .foot-title {
+        font-weight: bold;
+    }
+    .featured-desc {
         margin-bottom: 2em;
     }
-
 }
 
 .portfolio {
@@ -190,26 +205,10 @@ footer {
 }
 
 
-.logofooter {
-    max-height: 200px;
-    max-width: 200px;
-    border-radius: 0.5em;
-    margin-left: 20px;
-}
-
-
-form {
-    padding-bottom: 15px;   
+form {   
     align-items: center;
-    margin-bottom: 50px;
-    padding-left: 20px;
 }
-hr {
-    width: 90%;
-    border: 0;
-    border-bottom: 1px solid #fff;
-    margin: 20px auto;
-}
+
 
 .copyright {
     text-align: center;
@@ -218,9 +217,9 @@ hr {
 .underline {
     width: 50%;
     height: 5px;
-    background: #fff;
+    background: #000;
     border-radius: 3px;
-    position: relative;
+    position: center;
     top: 5px;
     left: 0;
 }
@@ -237,7 +236,7 @@ form button{
     text-align: center;
     line-height: 40px;
     font-size: 20px;
-    background: #fff;
+    background: #000;
     margin-right: 15px;
 }
 
@@ -255,6 +254,13 @@ form button{
         grid-template-columns: 60% auto;
     }
 
+    .footer-container ul{
+        display: grid;
+        grid-template-columns: 35% 20% 20% 20%;
+        grid-gap: 0.5em;
+        padding-left: 1em;
+    }
+
     .nav-container{
         a {
             font-size: 0.9em;
@@ -262,7 +268,7 @@ form button{
         
     }
 
-    .left, .portfolio-left {
+    .left, .portfolio-left{
         display: grid;
         place-content: center;
         grid-gap: 1em;
@@ -286,6 +292,12 @@ form button{
         padding-top: 7em;
     }
 
+    .footer {
+        margin-top: 1em;
+        margin-bottom: 2em;
+        padding-top: 7em;
+    }
+
 
     .skills-container ul {
         display: grid;
@@ -293,6 +305,7 @@ form button{
         grid-gap: 1em;
     }
 
+  
 
     .portfolio {
         padding-top: 7em;
@@ -302,9 +315,6 @@ form button{
         margin-left: 2em;
     }
 
-    .logofooter {
-        margin-top: 4em;
-    }
 
     .featured::before{
         content:  "";
