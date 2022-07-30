@@ -215,7 +215,8 @@ form button {
   border-radius: 0.5em;
   cursor: pointer;
   font-family: "Poppins";
-  margin-top: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .social-icons .fa-brands {
