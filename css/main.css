@@ -111,7 +111,7 @@ footer {
   color: #252525;
   margin-bottom: 3em;
   font-size: 0.9em;
-  line-height: 1.8em;
+  line-height: 2em;
   font-weight: 500;
 }
 
@@ -169,10 +169,10 @@ footer {
   height: 200px;
 }
 .footer-container ul li .footicon-container.two {
-  margin-top: -100px;
+  margin-top: -120px;
 }
 .footer-container ul li .footicon-container.three {
-  margin-top: -100px;
+  margin-top: -120px;
 }
 .footer-container ul li .footicon-container.four {
   height: 150px;
