@@ -20,11 +20,56 @@ img {
 }
 
 .nav-container {
-  background-color: #E04E6B;
+  background-color: #155edb;
 }
 .nav-container a {
   color: white;
   font-size: 0.7em;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+  float: right;
+  margin-right: 30px;
+}
+
+nav ul li {
+  background: #155edb;
+  position: relative;
+  list-style: none;
+  display: inline-block;
+}
+
+nav ul li a {
+  display: block;
+  padding: 0 15px;
+  color: white;
+  text-decoration: none;
+  line-height: 60px;
+  font-size: 20px;
+}
+
+nav ul li a:hover {
+  background: #a2b7ec;
+}
+
+nav ul ul {
+  position: absolute;
+  top: 60px;
+  display: none;
+}
+
+nav ul li:hover > ul {
+  display: block;
+  z-index: 1;
+}
+
+nav ul ul li {
+  width: 180px;
+  float: none;
+  display: list-item;
+  position: relative;
 }
 
 header {
@@ -45,7 +90,7 @@ header ul a {
 }
 
 .hero {
-  background: #de5d5f;
+  background: #336ed3;
   color: white;
   display: grid;
   text-align: center;
@@ -116,15 +161,15 @@ footer {
 }
 
 .skills {
-  background: #fab1a5;
+  background: #336ed3;
 }
 
 .footer {
-  background: #E0425E;
+  background: #336ed3;
 }
 
 .skills-container ul li {
-  background: #F9F3DB;
+  background: #a2b7ec;
   padding: 0em;
   border-radius: 1em;
   margin-bottom: 1em;
@@ -152,7 +197,7 @@ footer {
 }
 
 .footer-container ul li {
-  background: #fab1a5;
+  background: #336ed3;
   padding: 2em;
   border-radius: 1em;
   margin-bottom: 1em;
@@ -297,7 +342,7 @@ form button {
 @media only screen and (min-width: 1050px) {
   .hero {
     height: 70vh;
-    background: #de5d5f;
+    background: #336ed3;
   }
   .nav-container a {
     font-size: 1em;
