@@ -31,7 +31,6 @@ nav ul {
   padding: 0;
   margin: 0;
   float: right;
-  margin-right: 30px;
 }
 
 nav ul li {
@@ -43,11 +42,9 @@ nav ul li {
 
 nav ul li a {
   display: block;
-  padding: 0 15px;
   color: white;
   text-decoration: none;
   line-height: 60px;
-  font-size: 20px;
 }
 
 nav ul li a:hover {
@@ -271,8 +268,13 @@ form button {
   text-align: center;
   line-height: 40px;
   font-size: 20px;
-  background: #000;
+  background: #fff;
   margin-right: 15px;
+}
+
+.transition_3 a {
+  text-decoration: none;
+  color: #000;
 }
 
 @media only screen and (min-width: 800px) {
